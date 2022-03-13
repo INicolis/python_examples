@@ -18,7 +18,7 @@ class tirecarre:
     def incercle(self):
         return (self.r2<=1)
 
-n = 10**4
+n = 10**3
 totalincercle = 0
 x = []
 y = []
@@ -38,8 +38,11 @@ print('Pi est approché par {0:f}' .format(pihat))
 
 x = [i/n for i in range(-n,n+1)]
 y = [sqrt(1-x**2) for x in x];
+
 pyplot.plot(x,y,'b')
 pyplot.plot(x,[-y for y in y],'b')
+axes = pyplot.gca()
+axes.set_aspect('equal', adjustable='box')
 pyplot.show()
 
 print('erreur commise = {0:f}' .format(abs(pihat-pi)))
