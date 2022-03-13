@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 20 17:14:29 2019
+@author: Ioannis Nicolis
+"""
+
 from numpy import random 
 from matplotlib import pyplot
 from math import sqrt, pi 
