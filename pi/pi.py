@@ -18,7 +18,7 @@ class tirecarre:
     def incercle(self):
         return (self.r2<=1)
 
-n = 10**3
+n = 10**5
 totalincercle = 0
 x = []
 y = []
