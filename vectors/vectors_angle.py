@@ -48,11 +48,11 @@ def trace(xa,ya,xb,yb,xc,yc):
     plt.arrow(xa,ya,xb-xa,yb-ya,head_width=0.5, head_length=0.5)
     plt.arrow(xa,ya,xc-xa,yc-ya,head_width=0.5, head_length=0.5)
     plt.grid()
-    plt.xlim(min([xa,xb,xc])-1,max([xa,xb,xc])+1)
-    plt.ylim(min([ya,yb,yc])-1,max([ya,yb,yc])+1)
     plt.text(xa,ya,'A',fontsize=16)
     plt.text(xb,yb,'B',fontsize=16)
     plt.text(xc,yc,'C',fontsize=16)
+    axes = plt.gca()
+    axes.set_aspect('equal', adjustable='box')
     plt.show()
 
 trace(3,4,-2,6,8,9)
